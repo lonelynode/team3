@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: jarvan
+    password: 654321
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: oracle
+  application:
+    name: Team3Application
+
+server:
+  port: 8989
+  servlet:
+    context-path: /api
